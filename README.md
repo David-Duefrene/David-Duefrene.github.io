@@ -1,3 +1,5 @@
+<meta http-equiv="refresh" content="0; url=https://github.com/David-Duefrene/David-Duefrene/blob/gh-pages/build/index.html">
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
