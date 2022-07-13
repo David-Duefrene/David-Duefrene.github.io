@@ -42,17 +42,18 @@ body {
 	.Nav-button:hover {
 		color: #ff1515;
 	}
-	.Nav-button:active {
-		color: #ffffff;
-	}
-	.Nav-button:focus {
-		color: #ffffff;
+	.Nav-button.Active {
+		color: #12be1b;
 	}
 
 .Content-box {
 	width: 100%;
 	height: 100%;
+	visibility: collapse;
 }
+	.Content-box.Active {
+		visibility: visible;
+	}
 	.Content-box h1 {
 		font-size: 40px;
 		margin-top: 20px;
