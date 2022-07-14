@@ -87,6 +87,12 @@ body {
 		color: var(--highlight-color);
 	}
 
+.Card {
+	border: 1px solid var(--accent-color);
+	border-radius: 5px;
+	padding: 20px;
+}
+
 ul {
 	align-self: center;
 	width: 33%;
