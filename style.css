@@ -1,5 +1,6 @@
 :root {
 	--main-color: #2c3e50;
+	--off-main-color: #385e85;
 	--alt-color: #dfe4ec;
 	--accent-color: #0eebc6;
 	--accent-color-2: #3976d3;
@@ -8,6 +9,8 @@
 
 body {
 	background-color: var(--main-color);
+	display: inline-flex;
+	align-content: center;
 }
 
 .app {
@@ -16,7 +19,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
 	color: var(--alt-color);
-	margin-top: 60px;
+	margin-top: 10%;
 	margin-left: 10%;
 	max-width: 80%;
 	display: inline-flex;
@@ -25,9 +28,13 @@ body {
 }
 
 .Title-box {
-	width: 100%;
+	color: var(--alt-color);
+	background-color: var(--main-color);
+	width: 60%;
 	box-shadow: inset 0 0 10px var(--accent-color-2);
 	padding: 10px;
+	margin-left: 20%;
+	position: fixed;
 }
 	.Title-box h1 {
 		font-size: 40px;
@@ -59,17 +66,24 @@ body {
 .Content-box {
 	width: 50%;
 	min-height: 100%;
-	visibility: collapse;
+	visibility: visible;
 	display: flex;
 	flex-direction: column;
 	align-self: center;
 	border-radius: 5px;
-	box-shadow: inset 0 0 10px var(--accent-color-2);
 	padding: 2em;
 	margin-top: 1em;
 }
+
+@keyframes wave {
+	from {box-shadow: none;}
+	to {box-shadow: 2px 0 0 0 var(--off-main-color), -2px 0 0 0 var(--off-main-color);}
+  }
 	.Content-box.Active {
 		visibility: visible;
+
+		animation-name: wave;
+  		animation-duration: .2s;
 	}
 	.Content-box h1 {
 		font-size: 40px;
