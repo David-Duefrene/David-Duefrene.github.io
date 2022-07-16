@@ -105,6 +105,13 @@ body {
 	padding: 20px;
 }
 
+h1 {
+	font-family: 'odstemplikRegular';
+	font-weight: bolder;
+   	font-style: italic;
+	font-size: 4em;
+}
+
 ul {
 	align-self: center;
 	width: 33%;
