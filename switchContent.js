@@ -3,7 +3,6 @@ const switchContent = (target) => {
 	target.classList.add('Active')
 	document.querySelector('.Content-box.Active').classList.remove('Active');
 	document.querySelector(`#${target.id}-content`).classList.add('Active');
-	document.querySelector(`#${target.id}-content`).scrollIntoView();
 }
 
 const scrollObserverCallback = (entries) => {
@@ -26,5 +25,6 @@ document.querySelectorAll('.Title').forEach(button => {
 	observer.observe(document.querySelector(`#${button.id}-content`));
 	button.addEventListener('click', () => {
 		switchContent(event.target);
+		document.querySelector(`#${event.target.id}-content`).scrollIntoView();
 	});
 });
