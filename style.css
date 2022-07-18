@@ -68,10 +68,10 @@ body {
 	margin-top: 1em;
 }
 
-@keyframes wave {
-	from {box-shadow: none;}
-	to {box-shadow: 2px 0 0 0 var(--off-main-color), -2px 0 0 0 var(--off-main-color);}
-  }
+	@keyframes wave {
+		from {box-shadow: none;}
+		to {box-shadow: 2px 0 0 0 var(--off-main-color), -2px 0 0 0 var(--off-main-color);}
+	}
 	.Content-box.Active {
 		visibility: visible;
 
@@ -103,6 +103,8 @@ body {
 	border: 1px solid var(--accent-color);
 	border-radius: 5px;
 	padding: 20px;
+	display: flex;
+	flex-direction: column;
 }
 
 h1 {
@@ -112,21 +114,27 @@ h1 {
 	font-size: 4em;
 }
 
-ul {
-	align-self: center;
+.Skill-list {
 	width: 33%;
+	align-self: center;
 }
 
-li {
+.Skill-item {
 	display: inline-block;
 	width: 33%;
 	height: 2em;
 	font-size: 20px;
 	padding: 15px;
-	border: 1px solid #ffffff00;
 }
-	li:hover {
-		border: 1px solid var(--accent-color-2);
-		border-radius: 5px;
-		color: var(--highlight-color);
-	}
+
+.Tech-list {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+}
+
+.Tech-item {
+	font-size: 20px;
+	text-align: initial;
+	list-style-type: circle;
+}
