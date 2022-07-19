@@ -135,6 +135,12 @@ h1 {
 
 .Tech-item {
 	font-size: 20px;
-	text-align: initial;
-	list-style-type: circle;
+	list-style-type: none;
+	display: flex;
 }
+
+	.Tech-item img {
+		margin-right: 25px;
+		width: 2em;
+		height: 2em;
+	}
