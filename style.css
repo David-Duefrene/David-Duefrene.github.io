@@ -2,7 +2,7 @@
 	--main-color: #2c3e50;
 	--off-main-color: #385e85;
 	--alt-color: #dfe4ec;
-	--accent-color: #0eebc6;
+	--accent-color:  #0eebc659;
 	--accent-color-2: #3976d3;
 	--highlight-color: #f1c40f;
 }
@@ -49,6 +49,7 @@ body {
 	display: inline-flex;
 	flex-direction: row;
 	position: fixed;
+	box-shadow: -3px 1px 5px 2px var(--accent-color-2);
 }
 
 .Content-box {
@@ -60,6 +61,7 @@ body {
 	border-radius: 5px;
 	padding: 2em;
 	margin-top: 1em;
+	box-shadow: 1px 1px 5px 5px var(--accent-color), -1px -1px 5px 2px var(--accent-color), inset 1px 1px 1px 1px var(--accent-color), inset -1px -1px 1px 1px var(--accent-color);
 }
 
 	.Content-box h1 {
@@ -84,7 +86,6 @@ body {
 	}
 
 .Card {
-	border: 1px solid var(--accent-color);
 	border-radius: 5px;
 	padding: 20px;
 	display: flex;
