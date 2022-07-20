@@ -1,8 +1,6 @@
 const switchContent = (target) => {
 	document.querySelector('.Title.Nav-button.Active').classList.remove('Active');
 	target.classList.add('Active')
-	document.querySelector('.Content-box.Active').classList.remove('Active');
-	document.querySelector(`#${target.id}-content`).classList.add('Active');
 }
 
 const scrollObserverCallback = (entries) => {
@@ -24,7 +22,6 @@ const observer = new IntersectionObserver(scrollObserverCallback, {
 document.querySelectorAll('.Title').forEach(button => {
 	observer.observe(document.querySelector(`#${button.id}-content`));
 	button.addEventListener('click', () => {
-		switchContent(event.target);
-		document.querySelector(`#${event.target.id}-content`).scrollIntoView();
+		document.querySelector(`#${button.id}-content`).scrollIntoView(false);
 	});
 });

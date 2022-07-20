@@ -62,16 +62,6 @@ body {
 	margin-top: 1em;
 }
 
-	@keyframes wave {
-		from {box-shadow: none;}
-		to {box-shadow: 2px 0 0 0 var(--off-main-color), -2px 0 0 0 var(--off-main-color);}
-	}
-	.Content-box.Active {
-		visibility: visible;
-
-		animation-name: wave;
-  		animation-duration: .2s;
-	}
 	.Content-box h1 {
 		font-size: 40px;
 		margin-top: 20px;
