@@ -3,12 +3,33 @@
 	--off-main-color: #385e85;
 	--alt-color: #dfe4ec;
 	--accent-color:  #0eebc659;
-	--accent-color-2: #3976d3;
+	--accent-color-2: #103d80cc;
 	--highlight-color: #f1c40f;
 }
 
-body {
-	background-color: var(--main-color);
+@keyframes wave {
+	100% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	0% {
+		background-position: 0% 50%;
+	}
+}
+
+html {
+	animation: wave 10s ease infinite;
+	height: 100%;
+	background-image: linear-gradient(45deg, var(--main-color) 0%, var(--off-main-color) 50%, var(--accent-color-2) 100%);
+	background-size: 400% 400%;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .app {
