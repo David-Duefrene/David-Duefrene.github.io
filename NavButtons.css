@@ -13,11 +13,23 @@
 	font-size: 20px;
 	padding-bottom: 15px;
 }
-	.Nav-button.Active {
-		color: var(--accent-color);
+	@keyframes hovered {
+		0% {
+			background-color: var(--main-color);
+		}
+		100% {
+			background-color: var(--off-main-color);
+		}
 	}
-	.Nav-button:hover {
+
+	.Nav-button.Active {
 		color: var(--highlight-color);
+	}
+
+	.Nav-button:hover {
+		background-color: var(--off-main-color);
+		animation-duration: 1s;
+		animation-name: hovered;
 	}
 
 .Side-bar {
