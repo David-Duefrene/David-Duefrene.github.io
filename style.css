@@ -5,6 +5,7 @@
 	--accent-color:  #0eebc659;
 	--accent-color-2: #103d80cc;
 	--highlight-color: #f1c40f;
+	--glass-color: hsla(216, 87%, 34%, 0.027);
 }
 
 @keyframes wave {
@@ -80,6 +81,7 @@ html {
 	margin-top: 1em;
 	margin-bottom: 2em;
 	animation: float 25s ease-in-out infinite;
+	background-color: var(--glass-color);
 }
 
 	.Content-box h1 {
