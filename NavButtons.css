@@ -71,21 +71,4 @@
 		flex-direction: column;
 		margin-left: -8%;
 	}
-
-	.Content {
-		margin-left: 25%;
-	}
-
-	.Skill-list {
-		width: 33%;
-	}
-
-	.app {
-		max-width: unset;
-		text-align: center;
-	}
-
-	h1 {
-		margin-top: unset;
-	}
 }

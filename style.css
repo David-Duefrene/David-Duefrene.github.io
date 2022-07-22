@@ -150,3 +150,23 @@ h1 {
 		width: 2em;
 		height: 2em;
 	}
+
+
+@media (min-width: 1000px) {
+	.Content {
+		margin-left: 25%;
+		max-width: 45%;
+	}
+
+	.Skill-list {
+		width: 33%;
+	}
+
+	.app {
+		text-align: center;
+	}
+
+	h1 {
+		margin-top: unset;
+	}
+}
