@@ -5,35 +5,88 @@
 	--accent-color:  #0eebc659;
 	--accent-color-2: #103d80cc;
 	--highlight-color: #f1c40f;
-	--glass-color: hsla(216, 87%, 34%, 0.027);
+	--glass-color: hsla(215.8, 87.3%, 33.9%, 0.05);
 }
 
-@keyframes wave {
-	100% {
-		background-position: 0% 50%;
-	}
+/* CSS RESET */
+html { width:100%; height:100%; margin:0; padding:0; }
+body { width:100%; height:100%; margin:0; padding:0; }
 
-	50% {
-		background-position: 100% 50%;
-	}
-
-	0% {
-		background-position: 0% 50%;
-	}
-}
-
-html {
-	animation: wave 25s ease infinite;
+.inner-header {
 	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 	background-image:
 		repeating-linear-gradient(45deg, var(--main-color) 0%, var(--off-main-color) 50%, var(--accent-color-2) 100%),
 		repeating-radial-gradient(circle at bottom left, var(--main-color) 0%, var(--off-main-color) 50%, var(--accent-color) 100%);
+	position: fixed;
 	background-size: 400% 400%;
+	animation: Background-Flow 25s linear infinite;
+  }
 
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
+  @keyframes Background-Flow {
+	0% {
+		background-position: 0, 50%;
+	}
+	50% {
+		background-position: 100%, 50%;
+	}
+	100% {
+		background-position: 0, 50%;
+	}
+  }
+
+.waves {
+	position:relative;
+	width: 100%;
+	height: 100%;
 }
+
+.Wave-Group > use {
+	animation: Flow 25s cubic-bezier(.68, -0.55, .27, 1.55) infinite;
+}
+	.Wave-Group > use:nth-child(1) {
+		animation-delay: -2s;
+		animation-duration: 17s;
+  	}
+	.Wave-Group > use:nth-child(2) {
+		animation-delay: -3s;
+		animation-duration: 10s;
+	}
+	.Wave-Group > use:nth-child(3) {
+		animation-delay: -4s;
+		animation-duration: 13s;
+	}
+	.Wave-Group > use:nth-child(4) {
+		animation-delay: -5s;
+		animation-duration: 20s;
+	}
+	.Wave-Group > use:nth-child(5) {
+		animation-delay: -6s;
+		animation-duration: 17s;
+  	}
+
+	@keyframes Flow {
+		0% {
+			transform: translate(-70px, 0);
+				background:
+			repeating-linear-gradient(45deg, var(--main-color) 0%, var(--off-main-color) 50%, var(--accent-color-2) 100%),
+			repeating-radial-gradient(circle at bottom left, var(--main-color) 0%, var(--off-main-color) 50%, var(--accent-color) 100%);
+		}
+		50% {
+			transform: translate(70px, 0);
+				background:
+			repeating-linear-gradient(45deg, var(--main-color) 25%, var(--off-main-color) 75%, var(--accent-color-2) 100%),
+			repeating-radial-gradient(circle at bottom left, var(--main-color) 25%, var(--off-main-color) 75%, var(--accent-color) 100%);
+		}
+		100% {
+			transform: translate(-70px, 0);
+			background:
+			repeating-linear-gradient(45deg, var(--main-color) 0%, var(--off-main-color) 50%, var(--accent-color-2) 100%),
+			repeating-radial-gradient(circle at bottom left, var(--main-color) 0%, var(--off-main-color) 50%, var(--accent-color) 100%);
+		}
+	}
 
 .app {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -49,24 +102,19 @@ html {
 
 @keyframes float {
 	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6),
+		box-shadow: 0 5px 15px 0px var(--accent-color),
 			0 -5px -15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-		transform: translatex(0px);
+		transform: translate(0, 0);
 	}
 	50% {
-		/* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2), */
-		box-shadow: 0 25px 15px 0px var(--accent-color),
+		box-shadow: 0 20px 15px 0px var(--accent-color),
 			0 -25px 15px 0px rgba(0,0,0,0.2);
-		transform: translatey(-20px);
-		transform: translatex(-20px);
+		transform: translate(-20px, -20px);
 	}
 	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6),
+		box-shadow: 0 5px 15px 0px var(--accent-color),
 			0 -5px -15px 0px rgba(0,0,0,0.6);
-
-		transform: translatey(0px);
-		transform: translatex(0px);
+		transform: translate(0, 0);
 	}
 }
 
