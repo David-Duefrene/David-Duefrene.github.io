@@ -12,81 +12,37 @@
 html { width:100%; height:100%; margin:0; padding:0; }
 body { width:100%; height:100%; margin:0; padding:0; }
 
-.inner-header {
+.background {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-image:
+		repeating-linear-gradient(180deg, var(--main-color) 0%, var(--off-main-color) 50%, var(--accent-color-2) 100%);
+}
+
+.subBackground {
 	height: 100%;
 	width: 100%;
 	margin: 0;
 	padding: 0;
 	background-image:
-		repeating-linear-gradient(45deg, var(--main-color) 0%, var(--off-main-color) 50%, var(--accent-color-2) 100%),
-		repeating-radial-gradient(circle at bottom left, var(--main-color) 0%, var(--off-main-color) 50%, var(--accent-color) 100%);
+		repeating-radial-gradient(ellipse at bottom, #20e9df60, #0a94f062, #20e9df60);
 	position: fixed;
 	background-size: 400% 400%;
-	animation: Background-Flow 25s linear infinite;
+	animation: Background-Flow 60s ease-in infinite;
   }
 
   @keyframes Background-Flow {
 	0% {
-		background-position: 0, 50%;
+		background-position: top;
 	}
 	50% {
-		background-position: 100%, 50%;
+		background-position: bottom;
 	}
 	100% {
-		background-position: 0, 50%;
+		background-position: top;
 	}
   }
-
-.waves {
-	position:relative;
-	width: 100%;
-	height: 100%;
-}
-
-.Wave-Group > use {
-	animation: Flow 25s cubic-bezier(.68, -0.55, .27, 1.55) infinite;
-}
-	.Wave-Group > use:nth-child(1) {
-		animation-delay: -2s;
-		animation-duration: 17s;
-  	}
-	.Wave-Group > use:nth-child(2) {
-		animation-delay: -3s;
-		animation-duration: 10s;
-	}
-	.Wave-Group > use:nth-child(3) {
-		animation-delay: -4s;
-		animation-duration: 13s;
-	}
-	.Wave-Group > use:nth-child(4) {
-		animation-delay: -5s;
-		animation-duration: 20s;
-	}
-	.Wave-Group > use:nth-child(5) {
-		animation-delay: -6s;
-		animation-duration: 17s;
-  	}
-
-	@keyframes Flow {
-		0% {
-			transform: translate(-70px, 0);
-				background:
-			repeating-linear-gradient(45deg, var(--main-color) 0%, var(--off-main-color) 50%, var(--accent-color-2) 100%),
-			repeating-radial-gradient(circle at bottom left, var(--main-color) 0%, var(--off-main-color) 50%, var(--accent-color) 100%);
-		}
-		50% {
-			transform: translate(70px, 0);
-				background:
-			repeating-linear-gradient(45deg, var(--main-color) 25%, var(--off-main-color) 75%, var(--accent-color-2) 100%),
-			repeating-radial-gradient(circle at bottom left, var(--main-color) 25%, var(--off-main-color) 75%, var(--accent-color) 100%);
-		}
-		100% {
-			transform: translate(-70px, 0);
-			background:
-			repeating-linear-gradient(45deg, var(--main-color) 0%, var(--off-main-color) 50%, var(--accent-color-2) 100%),
-			repeating-radial-gradient(circle at bottom left, var(--main-color) 0%, var(--off-main-color) 50%, var(--accent-color) 100%);
-		}
-	}
 
 .app {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -128,7 +84,7 @@ body { width:100%; height:100%; margin:0; padding:0; }
 	padding: 2em;
 	margin-top: 1em;
 	margin-bottom: 2em;
-	animation: float 25s ease-in-out infinite;
+	animation: float 15s ease-in-out infinite;
 	background-color: var(--glass-color);
 }
 
