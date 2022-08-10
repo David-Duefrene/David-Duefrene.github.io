@@ -15,8 +15,7 @@ const myThemes = {
 		'off-background-color': '#575757',
 		'accent-color': '#0eebc659',
 		'highlight-color': '#f1c40f',
-		// 'glass-color': 'hsla(215.8, 87.3%, 33.9%, 0.05)',
-		'glass-color': '#44444424',
+		'glass-color': 'hsla(215.8, 87.3%, 33.9%, 0.05)',
 	},
 }
 
