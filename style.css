@@ -17,20 +17,8 @@ body { width:100%; height:100%; margin:0; padding:0; }
 	height: 100%;
 	width: 100%;
 	background-image:
-		repeating-linear-gradient(180deg, var(--main-color) 0%, var(--off-main-color) 50%, var(--accent-color-2) 100%);
+		linear-gradient(var(--background-color), var(--off-main-color));
 }
-
-.subBackground {
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	background-image:
-		repeating-radial-gradient(ellipse at bottom, #20e9df60, #0a94f062, #20e9df60);
-	position: fixed;
-	background-size: 400% 400%;
-	animation: Background-Flow 60s ease-in infinite;
-  }
 
   @keyframes Background-Flow {
 	0% {

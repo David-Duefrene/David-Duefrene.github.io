@@ -9,5 +9,8 @@
   },
   "devDependencies": {
     "vite": "2.9.14"
+  },
+  "dependencies": {
+    "themecontroller": "^0.0.2"
   }
 }
