@@ -20,6 +20,18 @@ const observer = new IntersectionObserver(scrollObserverCallback, {
   });
 
 document.querySelectorAll('.Title').forEach(button => {
+	if (button.id == 'ThemeSwitcher') {
+		// Capitalize first letter of string
+		const capitalize = (string,) => {
+			return string.charAt(0,).toUpperCase() + string.slice(1,)
+		}
+		button.addEventListener('click', () => {
+			window.ThemeController.theme = window.ThemeController.theme == 'light' ? 'dark' : 'light';
+			button.innerHTML = capitalize(window.ThemeController.theme);
+		});
+		button.innerHTML = capitalize(window.ThemeController.theme);
+		return;
+	}
 	observer.observe(document.querySelector(`#${button.id}-content`));
 	button.addEventListener('click', () => {
 		document.querySelector(`#${button.id}-content`).scrollIntoView(false);
