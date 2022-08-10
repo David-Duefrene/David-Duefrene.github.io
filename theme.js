@@ -1,4 +1,4 @@
-import ThemeController from './themecontroller'
+import ThemeController from 'themecontroller'
 
 const myThemes = {
 	'light': {
