@@ -1,13 +1,3 @@
-:root {
-	--main-color: #2c3e50;
-	--off-main-color: #385e85;
-	--alt-color: #dfe4ec;
-	--accent-color:  #0eebc659;
-	--accent-color-2: #103d80cc;
-	--highlight-color: #f1c40f;
-	--glass-color: hsla(215.8, 87.3%, 33.9%, 0.05);
-}
-
 /* CSS RESET */
 html { width:100%; height:100%; margin:0; padding:0; }
 body { width:100%; height:100%; margin:0; padding:0; }
@@ -17,60 +7,31 @@ body { width:100%; height:100%; margin:0; padding:0; }
 	height: 100%;
 	width: 100%;
 	background-image:
-		repeating-linear-gradient(180deg, var(--main-color) 0%, var(--off-main-color) 50%, var(--accent-color-2) 100%);
+		linear-gradient(var(--background-color), var(--off-background-color));
 }
-
-.subBackground {
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	background-image:
-		repeating-radial-gradient(ellipse at bottom, #20e9df60, #0a94f062, #20e9df60);
-	position: fixed;
-	background-size: 400% 400%;
-	animation: Background-Flow 60s ease-in infinite;
-  }
-
-  @keyframes Background-Flow {
-	0% {
-		background-position: top;
-	}
-	50% {
-		background-position: bottom;
-	}
-	100% {
-		background-position: top;
-	}
-  }
 
 .app {
 	font-family: Avenir, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	color: var(--alt-color);
+	color: var(--text-color);
 	margin-left: 10%;
 	display: inline-flex;
-	align-self: center;
 	align-content: center;
 	flex-direction: column;
+	position: relative;
+	width: 80%;
 }
 
-@keyframes float {
+@keyframes flicker {
 	0% {
-		box-shadow: 0 5px 15px 0px var(--accent-color),
-			0 -5px -15px 0px rgba(0,0,0,0.6);
-		transform: translate(0, 0);
+		box-shadow: 0 10px 15px 1px var(--accent-color);
 	}
 	50% {
-		box-shadow: 0 20px 15px 0px var(--accent-color),
-			0 -25px 15px 0px rgba(0,0,0,0.2);
-		transform: translate(-20px, -20px);
+		box-shadow: 0 20px 25px 1px var(--accent-color);
 	}
 	100% {
-		box-shadow: 0 5px 15px 0px var(--accent-color),
-			0 -5px -15px 0px rgba(0,0,0,0.6);
-		transform: translate(0, 0);
+		box-shadow: 0 10px 15px 1px var(--accent-color);
 	}
 }
 
@@ -84,7 +45,7 @@ body { width:100%; height:100%; margin:0; padding:0; }
 	padding: 2em;
 	margin-top: 1em;
 	margin-bottom: 2em;
-	animation: float 15s ease-in-out infinite;
+	animation: flicker 1s ease infinite;
 	background-color: var(--glass-color);
 }
 
@@ -120,7 +81,7 @@ h1 {
 	font-family: 'odstemplikRegular';
 	font-weight: bolder;
    	font-style: italic;
-	font-size: 4em;
+	font-size: 3em;
 	margin-top: 20%;
 }
 

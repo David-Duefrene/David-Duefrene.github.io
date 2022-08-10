@@ -1,5 +1,4 @@
 .Nav-bar {
-	color: var(--alt-color);
 	padding: 10px;
 	display: flex;
 }
@@ -7,9 +6,9 @@
 .Nav-button {
 	width: 100%;
 	background-color: var(--glass-color);
-	border: 1px solid var(--accent-color-2);
+	border: 1px solid var(--accent-color);
 	border-radius: 5px;
-	color: var(--alt-color);
+	color: var(--text-color);
 	font-size: 20px;
 	padding-bottom: 15px;
 }
@@ -18,7 +17,7 @@
 			background-color: var(--glass-color);
 		}
 		100% {
-			background-color: var(--off-main-color);
+			background-color: var(--accent-color);
 		}
 	}
 
@@ -27,36 +26,15 @@
 	}
 
 	.Nav-button:hover {
-		background-color: var(--off-main-color);
+		background-color: var(--accent-color);
 		animation-duration: 1s;
 		animation-name: hovered;
-	}
-
-
-	@keyframes sideFloat {
-		0% {
-			box-shadow: 0 5px 15px 0px var(--accent-color),
-				0 -5px -15px 0px rgba(0,0,0,0.6);
-			transform: translate(0, 0);
-		}
-		50% {
-			box-shadow: 0 20px 15px 0px var(--accent-color),
-				0 -25px 15px 0px rgba(0,0,0,0.2);
-			transform: translate(-20px, -20px);
-		}
-		100% {
-			box-shadow: 0 5px 15px 0px var(--accent-color),
-				0 -5px -15px 0px rgba(0,0,0,0.6);
-			transform: translate(0, 0);
-		}
 	}
 
 .Side-bar {
 	display: inline-flex;
 	flex-direction: row;
 	position: fixed;
-	box-shadow: -3px 1px 5px 2px var(--accent-color-2);
-	animation: sideFloat 25s ease-in-out infinite;
 }
 
 @media (min-width: 1000px) {
