@@ -5,7 +5,7 @@ const myThemes = {
 		'text-color': '#444444',
 		'background-color': '#e3e3e3',
 		'off-background-color': '#dbdada',
-		'accent-color': '#0eebc659',
+		'accent-color': '#06826d85',
 		'highlight-color': '#6b0505',
 		'glass-color': 'hsla(215.8, 87.3%, 33.9%, 0.05)',
 	},
