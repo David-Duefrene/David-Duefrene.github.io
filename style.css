@@ -99,12 +99,16 @@ h1 {
 }
 
 .Tech-list {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	place-content: center;
+	grid-template-columns: repeat(2, auto);
 	align-self: center;
+
 }
 
 .Tech-item {
+	margin: 5px;
+	object-fit: cover;
 	font-size: 20px;
 	list-style-type: none;
 	display: flex;
