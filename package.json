@@ -10,7 +10,7 @@
   "devDependencies": {
     "eslint": "8.21.0",
     "vigilant-octo-train": "0.0.5",
-    "vite": "2.9.14"
+    "vite": "2.9.15"
   },
   "dependencies": {
     "themecontroller": "0.0.2"
