@@ -13,7 +13,7 @@
     "cypress": "10.5.0",
     "eslint": "8.22.0",
     "vigilant-octo-train": "0.0.5",
-    "vite": "3.0.7"
+    "vite": "3.0.8"
   },
   "dependencies": {
     "themecontroller": "0.0.3"
