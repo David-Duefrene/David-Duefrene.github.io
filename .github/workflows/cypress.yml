@@ -8,4 +8,4 @@ jobs:
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
       - run: npm ci
-      - run: npm run preview & npx cypress
+      - run: npm run preview & npx cypress run
