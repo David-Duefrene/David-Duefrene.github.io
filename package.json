@@ -16,6 +16,6 @@
     "vite": "3.0.7"
   },
   "dependencies": {
-    "themecontroller": "0.0.2"
+    "themecontroller": "0.0.3"
   }
 }
