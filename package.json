@@ -11,7 +11,7 @@
   "devDependencies": {
     "@cypress/snapshot": "2.1.7",
     "cypress": "10.6.0",
-    "eslint": "8.22.0",
+    "eslint": "8.23.0",
     "vigilant-octo-train": "0.0.5",
     "vite": "3.0.9"
   },
