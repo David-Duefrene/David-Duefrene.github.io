@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "eslint": "8.33.0",
+    "eslint": "8.34.0",
     "vigilant-octo-train": "0.0.5",
     "vite": "4.1.4"
   },
