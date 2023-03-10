@@ -10,16 +10,15 @@
     <title>David Duefrene</title>
   </head>
   <body>
-	<div class="background"></div>
+	<img class="Parallax Para1" src="./chamber.png" />
 	<div class="app">
-		<div class="Nav-bar Side-bar">
+		<nav class="Nav-bar Side-bar">
 			<button id="About" class="Title Nav-button Active">About Me</button>
 			<button id="Proj" class="Title Nav-button">Projects</button>
 			<button id="Conn" class="Title Nav-button">Connect</button>
-			<button id="ThemeSwitcher" class="Title Nav-button">Theme</button>
-		</div>
-		<div class="Content">
-			<div id="About-content" class="Content-box Active">
+		</nav>
+		<main class="Content">
+			<section id="About-content" class="Content-box Active">
 				<h1 id="main-header">David Duefrene</h1>
 				<h2>About Me</h2>
 				<p>
@@ -32,8 +31,8 @@
 					<li class="Skill-item Python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo" />Python</li>
 					<li class="Skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" alt="Git logo" />Git</li>
 				</ul>
-			</div>
-			<div class="Content-box">
+			</section>
+			<section class="Content-box">
 				<h2>Projects</h2>
 				<div class="Card">
 					<h3 class="Card-title">Colorado Population Viewer</h3>
@@ -99,17 +98,16 @@
 						<a class="Nav-button" href="https://github.com/David-Duefrene/ThemeController" target="_blank" rel="noopener noreferrer">Code</a>
 					</div>
 				</div>
-			</div>
-			<div id="Conn-content" class="Content-box">
+			</section>
+			<section id="Conn-content" class="Content-box">
 				<h2>Connect</h2>
 				<ul class="Skill-list">
 					<li class="Skill-item"><a href="https://www.linkedin.com/in/david-duefrene-242858b4/" target="_blank" rel="noopener noreferrer"><img src="./LI-In-Bug.png" alt="LinkedIn logo" style="height:50px;"></a></li>
 					<li class="Skill-item"><a href="https://github.com/David-Duefrene" target="_blank" rel="noopener noreferrer"><img src="./GitHub_Logo.png" alt="Github logo" style="height:50px;"></a></li>
 				</ul>
-			</div>
-		</div>
+			</section>
+		</main>
 	</div>
-	<script type="module" src="./theme.js"></script>
     <script type="module" src="/switchContent.js"></script>
 </body>
 </html>
