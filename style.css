@@ -2,7 +2,7 @@
 html { width:100%; height:100%; margin:0; padding:0; }
 body { width:100%; height:100%; margin:0; padding:0; }
 
-.app {
+body {
 	--text-color: #e3e3e3;
 	--background-color: #444444;
 	--off-background-color: #222222;
@@ -14,7 +14,6 @@ body { width:100%; height:100%; margin:0; padding:0; }
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	color: var(--text-color);
-	margin-left: 10%;
 	display: inline-flex;
 	align-content: center;
 	flex-direction: column;
@@ -22,7 +21,6 @@ body { width:100%; height:100%; margin:0; padding:0; }
 	scroll-behavior: smooth;
     overflow: auto;
     scroll-snap-type: y mandatory;
-	height: 99vh;
 }
 
 @keyframes glow {
@@ -42,7 +40,7 @@ body { width:100%; height:100%; margin:0; padding:0; }
 	width: 100vw;
 	overflow-x: hidden;
 	perspective: 1px;
-	position: absolute;
+	position: fixed;
 }
 
 .Content-box {
@@ -59,6 +57,7 @@ body { width:100%; height:100%; margin:0; padding:0; }
 	scroll-snap-align: start;
 	min-height: 75vh;
 	width: 100%;
+	transform: translateZ(-1px);
 }
 
 	.Content-box h1 {
@@ -145,10 +144,6 @@ h1 {
 
 	.Skill-list {
 		width: 33%;
-	}
-
-	.app {
-		text-align: center;
 	}
 
 	h1 {
