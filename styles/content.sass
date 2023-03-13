@@ -1,0 +1,73 @@
+@keyframes glow
+	0%
+		box-shadow: 0 10px 15px 1px var(--accent-color)
+
+	50%
+		box-shadow: 0 20px 25px 1px var(--accent-color)
+
+	100%
+		box-shadow: 0 10px 15px 1px var(--accent-color)
+
+section
+	visibility: visible
+	display: flex
+	flex-direction: column
+	align-self: center
+	border-radius: 5px
+	padding: 2em
+	margin-top: 1em
+	margin-bottom: 2em
+	animation: glow 2s ease infinite
+	background-color: var(--glass-color)
+	scroll-snap-align: start
+	min-height: 75vh
+	width: 100%
+	transform: translateZ(-1px)
+
+	p
+		font-size: 20px
+		margin-top: 20px
+		width: 100%
+
+#Conn-content
+	min-height: 2em
+
+.Card
+	border-radius: 5px
+	padding: 20px
+	display: flex
+	flex-direction: column
+
+.Skill-list
+	align-self: center
+	margin-left: -3em
+
+.Skill-item
+	display: inline-block
+	width: 33%
+	height: 2em
+	font-size: 20px
+	padding: 15px
+
+.Tech-list
+	display: grid
+	place-content: center
+	grid-template-columns: repeat(2, auto)
+	align-self: center
+
+.Tech-item
+	margin: 5px
+	object-fit: cover
+	font-size: 20px
+	list-style-type: none
+	display: flex
+
+	& img
+		margin-right: 25px
+		width: 2em
+		height: 2em
+
+@media (min-width: 1000px)
+	.Skill-list
+		width: 33%
+
