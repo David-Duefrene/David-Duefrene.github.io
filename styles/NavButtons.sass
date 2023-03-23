@@ -1,14 +1,14 @@
-nav
+.Nav-bar
 	padding: 10px
 	display: inline-flex
 	flex-direction: row
-	position: fixed
 
 	.Active
 		color: var(--highlight-color)
 
-@media (min-width: 1000px)
-	nav
+nav.Side-bar
+	position: fixed
+	@media (min-width: 1000px)
 		margin-top: 20%
 		width: 10%
 		flex-direction: column
@@ -23,13 +23,17 @@ nav
 
 .Nav-button
 	width: 100%
+	padding: 10px
+
 	background-color: var(--glass-color)
 	border: 1px solid var(--accent-color)
 	border-radius: 5px
 	color: var(--text-color)
 	font-size: 20px
-	padding-bottom: 15px
 	text-decoration: none
+
+	display: flex
+	justify-content: space-around
 
 	&:hover
 		background-color: var(--accent-color)
