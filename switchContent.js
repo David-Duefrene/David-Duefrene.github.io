@@ -1,12 +1,13 @@
 const switchContent = (target) => {
-	document.querySelector('.Title.Nav-button.Active').classList.remove('Active')
+	document.querySelector('.Jump.Nav-button.Active').classList.remove('Active')
 	target.classList.add('Active')
 }
 
 const scrollObserverCallback = (entries) => {
 	entries.forEach((entry) => {
 		if (entry.isIntersecting) {
-			const target = entry.target
+			let target = entry.target
+			if (target.className === 'Card Project') target = target.parentElement
 			switchContent(document.querySelector(`#${target.id.match(/^.*?(?=-)/)}`))
 		}
 	})
@@ -18,21 +19,16 @@ const observer = new IntersectionObserver(scrollObserverCallback, {
 	threshold: 1.0,
 })
 
-document.querySelectorAll('.Title').forEach((button) => {
-	if (button.id === 'ThemeSwitcher') {
-		// Capitalize first letter of string
-		const capitalize = (string) => {
-			return string.charAt(0).toUpperCase() + string.slice(1)
-		}
-		button.addEventListener('click', () => {
-			window.ThemeController.theme = window.ThemeController.theme === 'light' ? 'dark' : 'light'
-			button.innerHTML = capitalize(window.ThemeController.theme)
-		})
-		button.innerHTML = capitalize(window.ThemeController.theme)
-		return
-	}
-	observer.observe(document.querySelector(`#${button.id}-content`))
+document.querySelectorAll('.Jump').forEach((button) => {
+	let proj = button.id === 'Proj'
+	if (button.id !== 'Proj') observer.observe(document.querySelector(`#${button.id}-Content`))
 	button.addEventListener('click', () => {
-		document.querySelector(`#${button.id}-content`).scrollIntoView(false)
+		proj ?
+			document.querySelector(`#ProjStart`).scrollIntoView(false) :
+			document.querySelector(`#${button.id}-Content`).scrollIntoView(false)
 	})
+})
+
+document.querySelectorAll('.Project').forEach((project) => {
+	observer.observe(project)
 })
