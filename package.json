@@ -12,7 +12,7 @@
     "eslint": "8.38.0",
     "sass": "^1.59.2",
     "vigilant-octo-train": "0.0.5",
-    "vite": "4.2.1"
+    "vite": "4.2.2"
   },
   "dependencies": {
     "themecontroller": "0.0.3"
