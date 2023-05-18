@@ -6,8 +6,9 @@ section
 	border-radius: 5px
 	padding: 2em
 
-	box-shadow: inset 9px 9px 10px var(--accent-color)
-	box-shadow: var(--accent-color) 0px 30px 60px -12px inset, var(--accent-color) 0px 18px 36px -18px inset
+	// box-shadow: inset 9px 9px 10px var(--accent-color)
+	// box-shadow: var(--accent-color) 0px 30px 60px -12px inset, var(--accent-color) 0px 18px 36px -18px inset
+	border: 2px solid var(--accent-color)
 	scroll-snap-align: center
 	scroll-snap-stop: always
 	overflow-y: scroll
@@ -43,11 +44,14 @@ section
 .Skill-list
 	align-self: center
 	margin-left: -3em
+	display: grid
+	grid-template-columns: repeat(2, 1fr)
+	grid-template-rows: repeat(2, 1fr)
+	grid-column-gap: 10px
+	grid-row-gap: 10px
 
 .Skill-item
 	display: inline-block
-	width: 33%
-	height: 2em
 	font-size: 20px
 	padding: 15px
 
@@ -75,5 +79,5 @@ section
 
 @media (min-width: 1000px)
 	.Skill-list
-		width: 33%
+		// width: 33%
 

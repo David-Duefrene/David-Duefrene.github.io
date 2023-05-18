@@ -27,16 +27,26 @@ body
 	margin: 0
 	padding: 0
 
-	--text-color: rgb(227, 227, 227)
-	--background-color: rgb(68, 68, 68)
+	--text-color: rgb(12, 12, 12)
+	--background-color: rgb(211, 211, 211)
 	--off-background-color: rgb(34, 34, 34)
-	--accent-color: rgba(235, 103, 14, 0.227)
-	--highlight-color: rgb(200, 255, 0)
-	--glass-color: rgba(54, 4, 0, 0.842)
+	--accent-color: rgba(243, 97, 0, 0.623)
+	--highlight-color: rgba(94, 255, 0, 0.781)
+	--glass-color: rgba(243, 97, 0, 0.24)
 	--image: url('/bg-web.webp')
 
+	// if dark mode is prefered
+	@media (prefers-color-scheme: dark)
+		--text-color: rgb(227, 227, 227)
+		--background-color: rgb(68, 68, 68)
+		--off-background-color: rgb(34, 34, 34)
+		--accent-color: rgba(243, 97, 0, 0.623)
+		--highlight-color: rgb(200, 255, 0)
+		--glass-color: rgba(114, 52, 11, 0.404)
+		--image: url('/bg-web.webp')
+
 	background-color: var(--background-color)
-	background-image: var(--image)
+	// background-image: var(--image)
 	background-repeat: no-repeat
 	background-attachment: fixed
 
@@ -73,5 +83,5 @@ h1
 		margin-top: unset
 
 	main
-		margin-left: 20%
+		margin-left: 30%
 		max-width: 45%
