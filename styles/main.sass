@@ -27,22 +27,27 @@ body
 	margin: 0
 	padding: 0
 
-	--text-color: #e3e3e3
-	--background-color: #444444
-	--off-background-color: #222222
-	--accent-color: #0eebc659
-	--highlight-color: #ff0000
-	--glass-color: rgba(0, 46, 54, 0.541)
-	// --image: url('/desk.png'), url('/desk low.png')
+	--text-color: rgb(12, 12, 12)
+	--background-color: rgb(211, 211, 211)
+	--off-background-color: rgb(34, 34, 34)
+	--accent-color: rgb(133, 54, 0)
+	--highlight-color: rgb(255, 251, 0)
+	--glass-color: rgba(243, 97, 0, 0.24)
+
+	// if dark mode is prefered
+	@media (prefers-color-scheme: dark)
+		--text-color: rgb(227, 227, 227)
+		--background-color: rgb(68, 68, 68)
+		--off-background-color: rgb(34, 34, 34)
+		--accent-color: rgba(243, 97, 0, 0.623)
+		--highlight-color: rgb(255, 251, 0)
+		--glass-color: rgba(114, 52, 11, 0.404)
 
 	background-color: var(--background-color)
-	// background-image: var(--image)
-	// background-repeat: no-repeat
-	// background-attachment: fixed
+	background-repeat: no-repeat
+	background-attachment: fixed
 
-	animation: backFadeIn 10s ease
-	background-size: 250vw 250vh
-	background-position: 75% 63%
+	background-size: 100vw 100vh
 
 	font-family: Avenir, Helvetica, Arial, sans-serif
 	-webkit-font-smoothing: antialiased
@@ -55,15 +60,7 @@ body
 	::-webkit-scrollbar
 		display: none
 
-@keyframes fadeIn
-	0%
-		opacity: 0
-
-	100%
-		opacity: 1
-
 main
-	// animation: fadeIn 3s ease-in 10s 1 normal forwards
 	overflow: hidden
 	overflow-y: scroll
 	scroll-snap-type: y mandatory
@@ -83,5 +80,5 @@ h1
 		margin-top: unset
 
 	main
-		margin-left: 20%
+		margin-left: 30%
 		max-width: 45%
