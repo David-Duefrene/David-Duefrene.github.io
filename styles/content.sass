@@ -1,45 +1,32 @@
 section
 	display: flex
 	flex-direction: column
-	align-self: center
 
 	border-radius: 5px
 	padding: 2em
 
-	// box-shadow: inset 9px 9px 10px var(--accent-color)
-	// box-shadow: var(--accent-color) 0px 30px 60px -12px inset, var(--accent-color) 0px 18px 36px -18px inset
 	border: 2px solid var(--accent-color)
-	scroll-snap-align: center
-	scroll-snap-stop: always
-	overflow-y: scroll
 
 	background-color: var(--glass-color)
 	background-size: cover
-	margin: 1em
-	margin-top: 25vh
-	margin-bottom: 50vh
+	margin: 0
+
 	transition: transform 0.5s ease-out
+
+	padding: 1em 5em 1em 1em
+	overflow: hidden
+	color: #fff
 
 	p
 		font-size: 20px
 		margin-top: 20px
 		width: 100%
 
-#Conn-content
-	min-height: 2em
-	display: flex
-	justify-content: center
-
 .Card
 	border-radius: 5px
 	padding: 20px
 	display: flex
 	flex-direction: column
-
-@media (max-width: 1000px)
-	.Project
-		height: 75vh
-		margin-top: 20%
 
 .Skill-list
 	align-self: center
@@ -76,8 +63,3 @@ section
 #Connect
 	margin-top: 65vh
 	margin-bottom: 20vh
-
-@media (min-width: 1000px)
-	.Skill-list
-		// width: 33%
-
