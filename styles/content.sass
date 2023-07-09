@@ -3,10 +3,11 @@ section
 	flex-direction: column
 	text-align: center
 
-	border-radius: 5px
-	padding: 2em
+	padding-left: 2em
+	padding-right: 2em
 
 	border: 2px solid var(--accent-color)
+	border-radius: 5px
 
 	background-color: var(--glass-color)
 	background-size: cover
@@ -30,14 +31,23 @@ section
 		margin-left: 5%
 		width: 90%
 
-	.About
-		margin-right: 5vw
+.About
+	margin-right: 5vw
 
 .Card
-	border-radius: 5px
-	padding: 20px
-	display: flex
-	flex-direction: column
+	flex-direction: row
+
+.Right
+	// margin-left: auto
+	padding-left: 1em
+	align-self: right
+	// make div go right to left
+	padding-right: 0
+
+	border-left: 2px solid var(--accent-color)
+.Left
+	padding-right: 1em
+	border-right: 2px solid var(--accent-color)
 
 .Skill-list
 	align-self: center
