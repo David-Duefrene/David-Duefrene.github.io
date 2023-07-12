@@ -17,13 +17,22 @@ section
 
 	transition: transform 0.5s ease-out
 
+	@media (max-width: 800px)
+		width: 80vw
+		margin: 5vw !important
+
 .First
 	display: flex
 	margin-top: 1vh
 
+	@media (max-width: 800px)
+		flex-direction: column
+
 	> section
 		background-color: unset
-		width: 40vw
+
+		@media (min-width: 800px)
+			width: 40vw
 
 	p
 		font-size: 20px
@@ -38,10 +47,8 @@ section
 	flex-direction: row
 
 .Right
-	// margin-left: auto
 	padding-left: 1em
 	align-self: right
-	// make div go right to left
 	padding-right: 0
 
 	border-left: 2px solid var(--accent-color)
