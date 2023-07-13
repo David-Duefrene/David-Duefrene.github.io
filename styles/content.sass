@@ -11,40 +11,32 @@ section
 
 	background-color: var(--glass-color)
 	background-size: cover
-	margin: 0
+
 	margin-top: 5vh
 	margin-bottom: 5vh
+	margin: 5vw
 
 	transition: transform 0.5s ease-out
 
-	@media (max-width: 800px)
-		width: 80vw
-		margin: 5vw !important
-
-.First
-	display: flex
-	margin-top: 1vh
-
-	@media (max-width: 800px)
-		flex-direction: column
-
-	> section
-		background-color: unset
-
-		@media (min-width: 800px)
-			width: 40vw
-
-	p
-		font-size: 20px
-		margin-top: 20px
-		margin-left: 5%
-		width: 90%
+aside
+	width: 10vw
+	float: right
+	box-shadow: inset 5px 0 5px -5px var(--accent-color)
+	font-style: italic
 
 .About
+	background-color: unset
 	margin-right: 5vw
+	display: block
+	height: 80vh
+	p
+		font-size: 20px
+	> h2
+		margin: 5vh
 
-.Card
-	flex-direction: row
+.Skill
+	margin: 1em
+	margin-bottom: 5vh
 
 .Right
 	padding-left: 1em
@@ -52,6 +44,7 @@ section
 	padding-right: 0
 
 	border-left: 2px solid var(--accent-color)
+
 .Left
 	padding-right: 1em
 	border-right: 2px solid var(--accent-color)
