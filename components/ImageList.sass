@@ -1,0 +1,23 @@
+.ImageList
+	display: grid
+	grid-template-columns: repeat(2, 1fr)
+	grid-template-rows: repeat(2, 1fr)
+	grid-column-gap: 10px
+	grid-row-gap: 10px
+
+	width: 10vw
+
+	@media (max-width: 800px)
+		grid-template-columns: repeat(1, 1fr)
+		grid-template-rows: repeat(4, 1fr)
+		width: 100%
+
+	& img
+		width: 4vw
+		height: 4vw
+
+.ImageItem
+	display: inline-block
+	font-size: 20px
+h3
+	min-width: 100px

@@ -1,6 +1,5 @@
 section
-	display: flex
-	flex-direction: column
+	display: block
 
 	text-align: center
 	font-size: 20px
@@ -15,10 +14,18 @@ section
 	margin-bottom: 5vh
 	margin: 5vw
 
+	min-height: 80vh
+
 	background-color: var(--glass-color)
 	background-size: cover
 
 	transition: transform 0.5s ease-out
+
+	p
+		font-size: 20px
+
+	&:first-of-type
+		background-color: unset
 
 aside
 	width: 10vw
@@ -26,74 +33,11 @@ aside
 	box-shadow: inset 5px 0 5px -5px var(--accent-color)
 	font-style: italic
 
-.About
-	background-color: unset
-	margin-right: 5vw
-	display: block
-	min-height: 80vh
-	p
-		font-size: 20px
-
-.Skill
 	margin: 1em
 	margin-bottom: 5vh
 	margin-right: 10vw
 
 	padding: 1px
-	display: flex
-	flex-direction: column
-
-.Right
-	padding-left: 1em
-	align-self: right
-	padding-right: 0
-
-	border-left: 2px solid var(--accent-color)
-
-.Left
-	padding-right: 1em
-	border-right: 2px solid var(--accent-color)
-
-.Skill-list
-	display: grid
-	grid-template-columns: repeat(2, 1fr)
-	grid-template-rows: repeat(2, 1fr)
-	grid-column-gap: 10px
-	grid-row-gap: 10px
-	border: 2px solid pink
-
-	width: 10vw
-
-	@media (max-width: 800px)
-		grid-template-columns: repeat(1, 1fr)
-		grid-template-rows: repeat(4, 1fr)
-		width: 100%
-
-	& img
-		width: 4vw
-		height: 4vw
-
-.Skill-item
-	display: inline-block
-	font-size: 20px
-
-.Tech-list
-	display: grid
-	place-content: center
-	grid-template-columns: repeat(2, auto)
-	align-self: center
-
-.Tech-item
-	margin: 5px
-	object-fit: cover
-	font-size: 20px
-	list-style-type: none
-	display: flex
-
-	& img
-		margin-right: 25px
-		width: 2em
-		height: 2em
 
 #Connect
 	margin-top: 65vh
