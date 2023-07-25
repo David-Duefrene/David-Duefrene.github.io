@@ -1,4 +1,4 @@
-import styles from './ImageList.sass'
+import styles from './ImageList.sass?inline'
 
 const IMAGE_SOURCE = {
 	JavaScript: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg',
