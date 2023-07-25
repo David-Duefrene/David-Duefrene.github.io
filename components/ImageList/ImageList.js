@@ -67,4 +67,4 @@ class ImageList extends HTMLElement {
 	}
 }
 
-customElements.define('image-list', ImageList)
+export default ImageList
