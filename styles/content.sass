@@ -18,18 +18,15 @@ section
 	background-size: cover
 
 	transition: transform 0.5s ease-out
+	min-height: 40vh
 
 	p
 		font-size: 20px
 
 aside
 	width: 10vw
-	float: right
-	box-shadow: inset 5px 0 5px -5px var(--accent-color)
+	@media (min-width: 550px)
+		float: right
 	font-style: italic
 
-	margin-right: 10vw
-
-#Connect
-	margin-top: 65vh
-	margin-bottom: 20vh
+	margin-right: 12vw

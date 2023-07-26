@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
 	build: {
 		lib: {
-			entry: './components/ImageList.js',
+			entry: './components/index.js',
 			name: 'web-components',
 			fileName: (format) => `web-components.${format}.js`,
 		  },
