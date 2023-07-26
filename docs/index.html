@@ -1,117 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
+<head>
+	<meta charset="UTF-8" />
 	
+	<link rel="stylesheet" href="style.css">
+	<link rel="preload" media="screen" href="https://fontlibrary.org//face/odstemplik" type="text/css"/>
 	
-	<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/odstemplik" type="text/css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>David Duefrene</title>
-    <script type="module" crossorigin src="/assets/index.33d356ec.js"></script>
-    <link rel="stylesheet" href="/assets/index.145e86fa.css">
-  </head>
-  <body>
-	<div class="background"></div>
-	<div class="app">
-		<div class="Nav-bar Side-bar">
-			<button id="About" class="Title Nav-button Active">About Me</button>
-			<button id="Proj" class="Title Nav-button">Projects</button>
-			<button id="Conn" class="Title Nav-button">Connect</button>
-			<button id="ThemeSwitcher" class="Title Nav-button">Theme</button>
-		</div>
-		<div class="Content">
-			<div id="About-content" class="Content-box Active">
-				<h1 id="main-header">David Duefrene</h1>
-				<h2>About Me</h2>
-				<p>
-					Hi, My name is David and I am a web developer and IT Specialist with over 10+ years of experience in system/network building & maintenance for residential & commercial clients. I also have experience with creating front end websites With React & JavaScript as well as using Python to parse data and serve as the back end. I have a passion for learning new technologies and I am always looking to improve my skills.
-				</p>
-				<h2>Skill List</h2>
-				<ul class="Skill-list">
-					<li class="Skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="Javascript logo" />Javascript</li>
-					<li class="Skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React logo" />React</li>
-					<li class="Skill-item Python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo" />Python</li>
-					<li class="Skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" alt="Git logo" />Git</li>
-				</ul>
+	<meta name="description" content="David Duefrene's portfolio website" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>David Duefrene</title>
+  <script type="module" crossorigin src="/web-components.umd.js"></script>
+</head>
+<body>
+	<app-header></app-header>
+
+	<main>
+		<section>
+			<h2>About Me</h2>
+			<aside>
+				<image-list strings="TypeScript React Python Git" name="Skill"></image-list>
+			</aside>
+			<p>
+				Hi, my name is David, and I am a versatile and passionate technology enthusiast with a strong background in IT support and troubleshooting. With expertise in JavaScript, HTML, and CSS, along with a solid understanding of Windows, Linux, networking, and system administration, I have been assisting individuals and businesses in resolving their technical challenges for several years.
+			</p>
+			<p>
+				In addition to my IT background, I have a keen interest in web development and aspire to transition into this field. I have showcased my web development skills through my hosted projects, such as the Colorado Population Viewer and the Colorado Budget Viewer. These projects, developed using TypeScript, React, JavaScript, Bootstrap, and Redux, highlight my ability to create interactive and visually appealing web applications.
+			</p>
+			<p>
+				With my passion for technology and my strong foundation in IT support, I am excited to embark on my journey towards becoming a web developer. I am eager to leverage my technical expertise and creative problem-solving skills to contribute to innovative web development projects and deliver exceptional user experiences.
+			</p>
+			<p>
+				Thank you for taking the time to learn more about me. I look forward to exploring new opportunities in the world of web development and making a positive impact in this dynamic field.
+			</p>
+		</section>
+		<section>
+			<aside>
+				<image-list strings="TypeScript React NextJS D3" name="Tech"></image-list>
+			</aside>
+			<h2>Colorado Population Viewer</h2>
+			<p>
+				Displays the past and present population as well as projected growth of the state of Colorado by county.
+			</p>
+			<h3>What I learned</h3>
+			<p>
+				I expanded my knowledge on the D3 library to create a multi-line chart. I also utilized NextJS to achieve over 90% speed score on lighthouse.
+			</p>
+			<div class="Nav-bar">
+				<a class="Nav-button" href="https://coloradopopulationviewer.davidduefrene.com/" target="_blank" rel="noopener noreferrer">App</a>
+				<a class="Nav-button" href="https://github.com/David-Duefrene/ColoradoPopulationViewer" target="_blank" rel="noopener noreferrer">Code</a>
 			</div>
-			<div class="Content-box">
-				<h2>Projects</h2>
-				<div class="Card">
-					<h3 class="Card-title">Colorado Population Viewer</h3>
-					<p class="Card-content">
-						Displays the past and present population as well as projected growth of the state of Colorado by county.
-					</p>
-					<h4>What I learned</h4>
-					<p class="Card-content">
-						I expanded my knowledge on the D3 library to create a multi-line chart. I also utilized NextJS to achieve over 90% speed score on lighthouse.
-					</p>
-					<h4>Tech Used</h4>
-					<ul class="Tech-list">
-						<li class="Tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" alt="Typescript logo" />Typescript</li>
-						<li class="Tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React logo" />React</li>
-						<li class="Tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg" />NextJS</li>
-						<li class="Tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg" alt="D3 logo" />D3</li>
-					</ul>
-					<div class="Nav-bar">
-						<a class="Nav-button" href="https://coloradopopulationviewer.davidduefrene.com/" target="_blank" rel="noopener noreferrer">App</a>
-						<a class="Nav-button" href="https://github.com/David-Duefrene/ColoradoPopulationViewer" target="_blank" rel="noopener noreferrer">Code</a>
-					</div>
-				</div>
-				<div class="Card">
-					<h3 class="Card-title">Colorado Budget Viewer</h3>
-					<p class="Card-content">
-						Displays a chart of profit and expenses of various funds, cabinets and departments of the Colorado state government.
-					</p>
-					<h4>What I learned</h4>
-					<p class="Card-content">
-						I learned how to use the D3 library to create a line chart. I also learned how to host a React app on Github pages.
-					</p>
-					<h4>Tech Used</h4>
-					<ul class="Tech-list">
-						<li class="Tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="Javascript logo" />Javascript</li>
-						<li class="Tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React logo" />React</li>
-						<li class="Tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg" alt="D3 logo" />D3</li>
-						<li class="Tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="Redux logo" />Redux</li>
-						<li class="Tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" alt="Jest logo" />Jest</li>
-						<li class="Tech-item"><img src="/assets/favicon.17e50649.svg" alt="Vite logo" />Vite</li>
-					</ul>
-					<div class="Nav-bar">
-						<a class="Nav-button" href="https://david-duefrene.github.io/Colorado-Budget/" target="_blank" rel="noopener noreferrer">App</a>
-						<a class="Nav-button" href="https://github.com/David-Duefrene/Colorado-Budget" target="_blank" rel="noopener noreferrer">Code</a>
-					</div>
-				</div>
-				<div class="Card">
-					<h3 id="Proj-content" class="Card-title">Theme Controller</h3>
-					<p class="Card-content">
-						A simple package that allows you to change the color of the background and general theme of the page.
-					</p>
-					<h4>What I learned</h4>
-					<p class="Card-content">
-						I Learned how to use vite to build a package and upload it to npm. I also started to learn Typescript.
-					</p>
-					<h4>Tech Used</h4>
-					<ul class="Tech-list">
-						<li class="Tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" alt="Typescript logo" />Typescript</li>
-						<li class="Tech-item"><img src="/assets/favicon.17e50649.svg" alt="Vite logo" />Vite</li>
-						<li class="Tech-item"><img src="/assets/vitestLogo.39933647.svg" alt="Vitest logo" />Vitest</li>
-					</ul>
-					<div class="Nav-bar">
-						<a class="Nav-button" href="https://codesandbox.io/s/theme-controller-demo-2mntxj" target="_blank" rel="noopener noreferrer">Sandbox Demo</a>
-						<a class="Nav-button" href="https://github.com/David-Duefrene/ThemeController" target="_blank" rel="noopener noreferrer">Code</a>
-					</div>
-				</div>
+		</section>
+		<section>
+			<aside class="Skill">
+				<image-list strings="JavaScript React D3 Redux Jest" name="Tech"></image-list>
+			</aside>
+			<h2 class="Card-title">Colorado Budget Viewer</h2>
+			<p class="Card-content">
+				Displays a chart of profit and expenses of various funds, cabinets and departments of the Colorado state government.
+			</p>
+			<h3>What I learned</h3>
+			<p class="Card-content">
+				I learned how to use the D3 library to create a line chart. I also learned how to host a React app on Github pages.
+			</p>
+			<div class="Nav-bar">
+				<a class="Nav-button" href="https://coloradobudget.davidduefrene.com/" target="_blank" rel="noopener noreferrer">App</a>
+				<a class="Nav-button" href="https://github.com/David-Duefrene/Colorado-Budget" target="_blank" rel="noopener noreferrer">Code</a>
 			</div>
-			<div id="Conn-content" class="Content-box">
-				<h2>Connect</h2>
-				<ul class="Skill-list">
-					<li class="Skill-item"><a href="https://www.linkedin.com/in/david-duefrene-242858b4/" target="_blank" rel="noopener noreferrer"><img src="/assets/LI-In-Bug.3c0149f2.png" alt="LinkedIn logo" style="height:50px;"></a></li>
-					<li class="Skill-item"><a href="https://github.com/David-Duefrene" target="_blank" rel="noopener noreferrer"><img src="/assets/GitHub_Logo.8fe8e40d.png" alt="Github logo" style="height:50px;"></a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	
+		</section>
+	</main>
     
 </body>
 </html>
