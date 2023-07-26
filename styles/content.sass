@@ -1,83 +1,32 @@
 section
-	display: flex
-	flex-direction: column
-	align-self: center
+	display: block
 
-	border-radius: 5px
-	padding: 2em
+	text-align: center
+	font-size: 20px
 
-	// box-shadow: inset 9px 9px 10px var(--accent-color)
-	// box-shadow: var(--accent-color) 0px 30px 60px -12px inset, var(--accent-color) 0px 18px 36px -18px inset
+	padding-left: 2em
+	padding-right: 2em
+
 	border: 2px solid var(--accent-color)
-	scroll-snap-align: center
-	scroll-snap-stop: always
-	overflow-y: scroll
+	border-radius: 5px
+
+	margin-top: 5vh
+	margin-bottom: 5vh
+	margin: 5vw
 
 	background-color: var(--glass-color)
 	background-size: cover
-	margin: 1em
-	margin-top: 25vh
-	margin-bottom: 50vh
+
 	transition: transform 0.5s ease-out
+	min-height: 40vh
 
 	p
 		font-size: 20px
-		margin-top: 20px
-		width: 100%
 
-#Conn-content
-	min-height: 2em
-	display: flex
-	justify-content: center
+aside
+	width: 10vw
+	@media (min-width: 550px)
+		float: right
+	font-style: italic
 
-.Card
-	border-radius: 5px
-	padding: 20px
-	display: flex
-	flex-direction: column
-
-@media (max-width: 1000px)
-	.Project
-		height: 75vh
-		margin-top: 20%
-
-.Skill-list
-	align-self: center
-	margin-left: -3em
-	display: grid
-	grid-template-columns: repeat(2, 1fr)
-	grid-template-rows: repeat(2, 1fr)
-	grid-column-gap: 10px
-	grid-row-gap: 10px
-
-.Skill-item
-	display: inline-block
-	font-size: 20px
-	padding: 15px
-
-.Tech-list
-	display: grid
-	place-content: center
-	grid-template-columns: repeat(2, auto)
-	align-self: center
-
-.Tech-item
-	margin: 5px
-	object-fit: cover
-	font-size: 20px
-	list-style-type: none
-	display: flex
-
-	& img
-		margin-right: 25px
-		width: 2em
-		height: 2em
-
-#Connect
-	margin-top: 65vh
-	margin-bottom: 20vh
-
-@media (min-width: 1000px)
-	.Skill-list
-		// width: 33%
-
+	margin-right: 12vw
