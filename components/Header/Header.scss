@@ -1,0 +1,32 @@
+.Header {
+	display: flex;
+	flex-direction: row;
+	
+	justify-content: center;
+	align-items: center;
+	width: 80vw;
+	min-height: 10vh;
+	margin: 0;
+	padding: 0;
+	margin-left: 10vw;
+
+	background-color: var(--glass-color);
+	border-radius: 5px;
+	border: 2px solid var(--accent-color);
+	
+	@media (max-width: 715px) {
+		flex-direction: column;
+	}
+	
+	> * {
+		margin: 25px;
+	}
+}
+
+h1 {
+	font-family: 'odstemplikRegular';
+	font-weight: bolder;
+	font-style: italic;
+
+	margin-top: 20%;
+}
