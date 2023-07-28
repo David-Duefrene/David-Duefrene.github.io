@@ -1,4 +1,4 @@
-import styles from './ImageList.sass?inline'
+import styles from './ImageList.scss?inline'
 
 const IMAGE_SOURCE = {
 	JavaScript: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg',
@@ -20,7 +20,7 @@ class ImageList extends HTMLElement {
 	}
 
 	static get observedAttributes() {
-		return [ 'strings', 'name' ]
+		return ['strings', 'name']
 	}
 
 	attributeChangedCallback(name) {

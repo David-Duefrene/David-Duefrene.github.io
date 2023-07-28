@@ -1,0 +1,39 @@
+.ImageList {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+
+	width: 10vw;
+
+	@media (min-width: 1200px) {
+		grid-template-columns: repeat(3, 1fr);
+		width: 20vw;
+	}
+	
+	@media (max-width: 800px) {
+		grid-template-columns: repeat(1, 1fr);
+		width: unset;
+	}
+		
+	& img {
+		width: 4vw;
+		height: 4vw;
+		min-width: 50px;
+		min-height: 50px;
+	}
+}
+
+.ImageItem {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 20px;
+}
+
+h3 {
+	min-width: 200px;
+}
+	

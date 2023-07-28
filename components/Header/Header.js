@@ -1,4 +1,4 @@
-import styles from './Header.sass?inline'
+import styles from './Header.scss?inline'
 
 class Header extends HTMLElement {
 	constructor() {
